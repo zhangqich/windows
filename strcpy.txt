@@ -6,7 +6,7 @@ char* StrCpy(char* src)
  while(*Src){
  len++;
  Src++;
- }
+ }//计算字符串长度
  Src=src;
  char* p=(char*)malloc(sizeof(char)*(len+1));
  char* P=p;
