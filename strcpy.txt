@@ -1,0 +1,20 @@
+
+char* StrCpy(char* src)
+{
+ char* Src=src;
+ int len=0;
+ while(*Src){
+ len++;
+ Src++;
+ }
+ Src=src;
+ char* p=(char*)malloc(sizeof(char)*(len+1));
+ char* P=p;
+ while(*Src){
+  *p=*Src;
+   p++;
+  Src++;
+ }
+ *p=' \0';
+ return P;
+}
